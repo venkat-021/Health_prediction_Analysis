@@ -1,0 +1,182 @@
+body {
+  background-image: url('1.png'); /* ← Replace with your image name */
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  color: #333;
+  padding: 20px;
+}
+
+
+body.dark-mode {
+  background-color: #121212;
+  color: #f0f0f0;
+}
+
+/* Dark mode for inputs and buttons */
+body.dark-mode input,
+body.dark-mode select,
+body.dark-mode button {
+  background-color: #333;
+  color: #f0f0f0;
+  border: 1px solid #555;
+}
+
+/* Dark mode toggle */
+.top-right {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+
+.top-right button {
+  padding: 8px 12px;
+  border: none;
+  background-color: #444;
+  color: #fff;
+  cursor: pointer;
+  border-radius: 6px;
+}
+
+/* Main container */
+.container {
+  max-width: 900px;
+  margin: auto;
+  background-color: rgba(255, 255, 255, 0.85);
+  padding: 30px;
+  border-radius: 16px;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(5px);
+  animation: fadeIn 1s ease-in-out;
+}
+
+body.dark-mode .container {
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.form-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: 15px;
+  margin: 20px 0;
+}
+
+input, select {
+  padding: 10px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  width: 100%;
+}
+
+/* Buttons */
+.controls {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin-bottom: 10px;
+}
+
+button {
+  background-color: #007bff;
+  color: white;
+  padding: 10px 14px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+/* Report Section */
+#report {
+  margin-top: 20px;
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 12px;
+  transition: background-color 0.3s;
+}
+
+body.dark-mode #report {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.highlight {
+  font-weight: bold;
+  color: #007bff;
+}
+
+/* Progress Bar */
+.progress-bar {
+  background-color: #eee;
+  border-radius: 20px;
+  overflow: hidden;
+  height: 12px;
+  margin-top: 5px;
+}
+
+.progress-fill {
+  background-color: #28a745;
+  height: 100%;
+  transition: width 0.5s ease;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(25px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+/* To position the form inputs to the left */
+.left-aligned {
+  margin-left: 40px;
+  margin-top: 40px;
+  text-align: left;
+  max-width: 400px;
+}
+
+/* Optional - makes form inputs stack vertically */
+.form-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+input, select, button {
+  padding: 10px;
+  font-size: 16px;
+}
+/* Transparent box around input container */
+.input-container {
+  background-color: rgba(255, 255, 255, 0.2); /* semi-transparent white */
+  padding: 20px;
+  border-radius: 15px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  backdrop-filter: blur(10px); /* Optional: makes background nicely blurred */
+  -webkit-backdrop-filter: blur(10px); /* For Safari */
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  max-width: 400px;
+}
+
+/* Keep inputs stacked */
+.form-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+input, select, button {
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+

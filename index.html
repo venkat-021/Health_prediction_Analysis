@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Health Analysis</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- Removed background image -->
+  <!-- <div class="background-image">
+    <img src="Background Image.jpg" alt="Background" />
+  </div> -->
+
+  <div class="top-right">
+    <button onclick="toggleDarkMode()">🌙</button>
+  </div>
+
+  <div class="input-container left-aligned">
+    <h1>🩺 Health Analysis</h1>
+    <div class="form-grid">
+      <input type="number" id="weight" placeholder="Weight (kg)" />
+      <input type="number" id="height" placeholder="Height (cm)" />
+      <input type="number" id="arm_length" placeholder="Arm Length (cm)" />
+      <input type="number" id="leg_length" placeholder="Leg Length (cm)" />
+      <input type="number" id="arm_circumference" placeholder="Arm Circumference (cm)" />
+      <input type="number" id="waist" placeholder="Waist (cm)" />
+      <input type="number" id="hip" placeholder="Hip (cm)" />
+      <select id="gender">
+        <option value="Male">Male</option>
+        <option value="Female">Female</option>
+      </select>
+    </div>
+    <button onclick="analyze()">Analyze</button>
+  </div>
+
+  <div class="report-container" id="report"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
+
